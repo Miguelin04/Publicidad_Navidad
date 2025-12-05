@@ -26,7 +26,7 @@ const LocationContact: React.FC = () => {
                 <div>
                   <h4 className="font-bold text-lg">Dirección</h4>
                   <p className="text-gray-400">Cdla. La Pradera, calles Romerillos y Manzanos</p>
-                  <a href="#" className="text-yellow-500 text-sm hover:underline mt-1 block">Ver en Google Maps</a>
+                  <a href="https://maps.app.goo.gl/sfTJvk6NkUq9fs4q8" target="_blank" rel="noopener noreferrer" className="text-yellow-500 text-sm hover:underline mt-1 block">Ver en Google Maps</a>
                 </div>
               </div>
 
@@ -58,12 +58,16 @@ const LocationContact: React.FC = () => {
           </div>
 
           {/* Map Visual (Stylized) */}
-          <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl bg-gray-800 border-4 border-gray-800">
-             {/* Using a static map image placeholder - in production would be Google Maps Embed */}
-             <img 
-              src="https://picsum.photos/800/800?grayscale" 
-              alt="Mapa de Ubicación" 
-              className="w-full h-full object-cover opacity-50 hover:opacity-75 transition-opacity duration-500"
+           <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl bg-gray-800 border-4 border-gray-800">
+             {/* Google Maps Embed for Gabito Gourmet */}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d248.7517150123202!2d-79.1988489!3d-4.0147711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91cb399f760344c1%3A0x380d1732c4a3f74!2sGabito%20Gourmet!5e0!3m2!1ses-419!2sec!4v1764895005287!5m2!1ses-419!2sec"
+              title="Mapa de Gabito Gourmet"
+              className="w-full h-full"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
              />
              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <div className="relative">

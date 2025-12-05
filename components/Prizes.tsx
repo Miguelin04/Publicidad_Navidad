@@ -26,7 +26,7 @@ const Prizes: React.FC = () => {
           <div className="relative h-64 md:h-80 overflow-hidden group">
              {/* Use picsum for Thanksgiving/Turkey vibes */}
              <img 
-              src="img/image.png" 
+              src="/img/image.png" 
               alt="Pavo Horneado" 
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
@@ -58,7 +58,7 @@ const Prizes: React.FC = () => {
           <div className="relative h-64 md:h-80 overflow-hidden group">
              {/* Use picsum for Basket vibes */}
              <img 
-              src="img/canasta.png" 
+              src="/img/canasta.png" 
               alt="Canasta Navideña" 
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />

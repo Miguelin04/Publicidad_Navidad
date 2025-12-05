@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Gift, Clock, MapPin } from 'lucide-react';
-import logo from '../img/logo.jpg';
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -27,7 +26,7 @@ const Navbar: React.FC = () => {
         
         {/* Brand */}
         <div className={`flex items-center gap-3 font-serif font-bold text-2xl tracking-wider transition-colors ${scrolled ? 'text-red-900' : 'text-white'}`}>
-          <img src={logo} alt="Gabito Gourmet" className="w-10 h-10 object-cover rounded-full shadow-sm" />
+          <img src="/img/logo.jpg" alt="Gabito Gourmet" className="w-10 h-10 object-cover rounded-full shadow-sm" />
           <div className="leading-tight">
             <div className="uppercase">GABITO <span className="text-yellow-500">GOURMET</span></div>
           </div>
